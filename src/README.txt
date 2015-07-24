@@ -17,3 +17,4 @@ OO Patterns:
 -Strategy Pattern -> see patterns.design.chapter1.strategypattern
 -Observer Pattern -> see patterns.design.chapter2.observerpattern
 -Decorator Pattern -> see patterns.design.chapter3.decoratorpattern
+-Factory Pattern -> see patterns.design.chapter4.factorypattern
