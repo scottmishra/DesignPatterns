@@ -34,6 +34,7 @@ public class WeatherData implements Subject{
 
 	@Override
 	public void notifyObservers() {
+		System.out.println("updating observers");
 		for (Observer observer : observerList) {
 			observer.update(weatherModel);
 		}
@@ -46,5 +47,6 @@ public class WeatherData implements Subject{
 	
 	public void setMeasurements(float temp, float humidity, float press){
 		weatherModel = new WeatherModel(temp,humidity,press);
+		measurementsChanged();
 	}
 }
