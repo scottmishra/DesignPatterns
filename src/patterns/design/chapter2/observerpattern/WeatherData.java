@@ -1,43 +1,50 @@
 package patterns.design.chapter2.observerpattern;
 
-public class WeatherData {
-	public float temp;
-	public float humidity;
-	public float pressure;
+import java.util.ArrayList;
 
+public class WeatherData implements Subject{
+	
+	private ArrayList<Observer> observerList;
+	private WeatherModel weatherModel;
+	
 	public WeatherData() {
-		temp = 0;
-		humidity = 0;
-		pressure = 0;
+		
+		observerList = new ArrayList<Observer>();
 	}
 
-	public WeatherData(float temp, float humidity, float pressure) {
-		this.temp = temp;
-		this.humidity = humidity;
-		this.pressure = pressure;
+	/**
+	 * Add an observer to the list when it registers
+	 * @param obs
+	 */
+	@Override
+	public void registerObserver(Observer obs) {
+		observerList.add(obs);
+		
+	}
+
+	/**
+	 * Remove the obs from the list when it un-registers
+	 * @param obs
+	 */
+	@Override
+	public void removeObserver(Observer obs) {
+		observerList.remove(obs);
+				
+	}
+
+	@Override
+	public void notifyObservers() {
+		for (Observer observer : observerList) {
+			observer.update(weatherModel);
+		}
+		
 	}
 	
-	public float getTemp() {
-		return temp;
+	public void measurementsChanged(){
+		notifyObservers();
 	}
-
-	public void setTemp(float temp) {
-		this.temp = temp;
-	}
-
-	public float getHumidity() {
-		return humidity;
-	}
-
-	public void setHumidity(float humidity) {
-		this.humidity = humidity;
-	}
-
-	public float getPressure() {
-		return pressure;
-	}
-
-	public void setPressure(float pressure) {
-		this.pressure = pressure;
+	
+	public void setMeasurements(float temp, float humidity, float press){
+		weatherModel = new WeatherModel(temp,humidity,press);
 	}
 }
