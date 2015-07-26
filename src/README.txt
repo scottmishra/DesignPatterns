@@ -19,3 +19,4 @@ OO Patterns:
 -Observer Pattern -> see patterns.design.chapter2.observerpattern
 -Decorator Pattern -> see patterns.design.chapter3.decoratorpattern
 -Factory Pattern -> see patterns.design.chapter4.factorypattern
+-Singleton Pattern -> see patterns.design.chapter5.singletonpattern
