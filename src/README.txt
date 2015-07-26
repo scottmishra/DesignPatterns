@@ -12,6 +12,7 @@ OO Principles:
 -Program to interfaces, not implementation
 -Strive for loosely coupled designs between objects that interact
 -Classes should be open for extension but closed for modification
+-Depend upon abstractions, not on concrete classes
 
 OO Patterns:
 -Strategy Pattern -> see patterns.design.chapter1.strategypattern
