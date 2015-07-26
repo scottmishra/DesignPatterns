@@ -2,7 +2,7 @@ package patterns.design.chapter3.decoratorpattern;
 
 public class StarBuzzCoffee {
 	public static void main(String[] args) {
-		Beverage beverage = new Espresso();
+		Beverage beverage = new HouseBlend();
 		System.out.println(beverage.getDescription() + " $" + beverage.cost());
 		
 		//Use the Decorators to wrap the DarkRoad
