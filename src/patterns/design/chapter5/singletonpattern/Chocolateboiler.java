@@ -35,6 +35,7 @@ public class Chocolateboiler {
 	//Fill the boiler with milk/chocolate mixture
 	public void fill(){
 		if(isEmpty()){
+			System.out.println("Filling boiler");
 			empty = false;
 			boiled = false;
 		}

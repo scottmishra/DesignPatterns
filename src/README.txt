@@ -20,3 +20,4 @@ OO Patterns:
 -Decorator Pattern -> see patterns.design.chapter3.decoratorpattern
 -Factory Pattern -> see patterns.design.chapter4.factorypattern
 -Singleton Pattern -> see patterns.design.chapter5.singletonpattern
+-Command Pattern -> see patterns.design.chapter6.commandpattern
