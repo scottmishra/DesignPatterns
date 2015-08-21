@@ -21,3 +21,4 @@ OO Patterns:
 -Factory Pattern -> see patterns.design.chapter4.factorypattern
 -Singleton Pattern -> see patterns.design.chapter5.singletonpattern
 -Command Pattern -> see patterns.design.chapter6.commandpattern
+-Adapter Pattern -> see patterns.design.chapter7.adapterpattern
