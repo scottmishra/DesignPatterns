@@ -1,4 +1,4 @@
-Chapter 7: The Adapter Pattern & THe Facade Pattern
+Chapter 7: The Adapter Pattern
 
 The Adapter Pattern: Converts the interface od a class into another interface the clients expect. Adapters let
 calsses work together that couldn't otherwise because of incompatible interfaces
@@ -25,6 +25,3 @@ doesn't exist in java, but does in several other languages. In the class adapter
 subclass of both the target and adaptee classes.
 
 
-The Facade Pattern:
-
-The Facade pattern is ment to make an interface simpler to use

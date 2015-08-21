@@ -13,6 +13,7 @@ OO Principles:
 -Strive for loosely coupled designs between objects that interact
 -Classes should be open for extension but closed for modification
 -Depend upon abstractions, not on concrete classes
+-Principle of least knowledge, talk only to your immediate friends
 
 OO Patterns:
 -Strategy Pattern -> see patterns.design.chapter1.strategypattern
@@ -22,4 +23,4 @@ OO Patterns:
 -Singleton Pattern -> see patterns.design.chapter5.singletonpattern
 -Command Pattern -> see patterns.design.chapter6.commandpattern
 -Adapter Pattern -> see patterns.design.chapter7.adapterpattern
--Facade Pattern -> see patterns.design.chapter7.adapterpattern
+-Facade Pattern -> see patterns.design.chapter7.facadepattern
