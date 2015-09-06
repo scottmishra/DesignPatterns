@@ -1,7 +1,8 @@
 package patterns.design.chapter8.templatemethodpattern;
 
-public class Coffee1 {
+public class Coffee1 extends CaffeineBeverage{
 	
+	@Override
 	void prepareRecipe(){
 		boilWater();
 		brewCoffeeGrinds();
@@ -14,17 +15,8 @@ public class Coffee1 {
 		System.out.println("Adding sugar and Milk");
 	}
 
-	private void pourInCup() {
-		System.out.println("Pouring into Cup");
-	}
-
 	private void brewCoffeeGrinds() {
 		System.out.println("Dipping Coffee through filter");
 		
 	}
-
-	private void boilWater() {
-		System.out.println("Boiling Water");
-	}
-
 }
