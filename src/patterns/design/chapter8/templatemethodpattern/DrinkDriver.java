@@ -10,5 +10,8 @@ public class DrinkDriver {
 		
 		System.out.println("Creating tea");
 		tea.prepareRecipe();
+		
+		CaffeineBeverageWithHook coffeeHook = new CoffeeWithHook();
+		coffeeHook.prepareRecipe();
 	}
 }
