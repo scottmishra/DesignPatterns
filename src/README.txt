@@ -14,6 +14,7 @@ OO Principles:
 -Classes should be open for extension but closed for modification
 -Depend upon abstractions, not on concrete classes
 -Principle of least knowledge, talk only to your immediate friends
+-The Hollywood principle: don't call us, we'll call you
 
 OO Patterns:
 -Strategy Pattern -> see patterns.design.chapter1.strategypattern
