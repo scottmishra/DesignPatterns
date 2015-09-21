@@ -30,7 +30,14 @@ public class DinerMenu {
         }
     }
 
-    public MenuItem[] getMenuItems() {
-        return menuItems;
+    //Dont want this anymore as it exposes out implementation
+//    public MenuItem[] getMenuItems() {
+//        return menuItems;
+//    }
+
+    //Now the iteration of the menuItems is based inside the DinerMenuIterator class
+    //And the base class conforms to a easily expandable iterator pattern
+    public Iterator createIterator(){
+        return new DinerMenuIterator(menuItems);
     }
 }
